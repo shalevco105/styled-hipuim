@@ -10,7 +10,7 @@ const testimonials = [
     },
     {
         name: "יעל לוי, מעצבת פנים",
-        text: "בתור מעצבת שמחפשת תמיד שלמות עבור הלקוחות שלה, WallStyle סיפקו איכות חומרים מדהימה וגימור ללא רבב. התוצאה הסופית עלתה על כל הציפיות.",
+        text: "בתור מעצבת שמחפשת תמיד שלמות עבור הלקוחות שלה, Styled Hipuim סיפקו איכות חומרים מדהימה וגימור ללא רבב. התוצאה הסופית עלתה על כל הציפיות.",
     },
     {
         name: "דני נגר, חברת הייטק",
@@ -56,7 +56,7 @@ export default function Testimonials() {
                             <Quote size={40} className="text-stone-600 absolute top-6 right-6 opacity-30" />
                             <div className="relative z-10">
                                 <p className="text-stone-300 text-lg leading-relaxed mb-8 italic">
-                                    "{testimonial.text}"
+                                    &quot;{testimonial.text}&quot;
                                 </p>
                                 <div className="w-12 h-[1px] bg-stone-600 mb-4" />
                                 <h4 className="font-bold text-lg text-white">{testimonial.name}</h4>

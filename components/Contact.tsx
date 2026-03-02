@@ -40,7 +40,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h4 className="text-lg font-bold text-stone-900 mb-1">אימייל</h4>
-                                    <p className="text-stone-600">info@wallstyle.co.il</p>
+                                    <p className="text-stone-600">info@styledhipuim.co.il</p>
                                 </div>
                             </div>
 

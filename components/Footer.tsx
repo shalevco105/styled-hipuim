@@ -12,7 +12,7 @@ export default function Footer() {
                                 W
                             </div>
                             <span className="text-2xl font-bold tracking-tight text-white">
-                                WallStyle
+                                Styled Hipuim
                             </span>
                         </div>
                         <p className="text-stone-400 mb-8 max-w-sm leading-relaxed">
@@ -55,7 +55,7 @@ export default function Footer() {
                 </div>
 
                 <div className="flex flex-col md:flex-row items-center justify-between text-stone-500 text-sm">
-                    <p>© {new Date().getFullYear()} WallStyle. כל הזכויות שמורות.</p>
+                    <p>© {new Date().getFullYear()} Styled Hipuim. כל הזכויות שמורות.</p>
                     <p className="mt-4 md:mt-0">נבנה במומחיות עבורכם</p>
                 </div>
             </div>
