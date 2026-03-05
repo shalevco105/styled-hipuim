@@ -6,8 +6,8 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-12 border-b border-stone-800 pb-12">
                     {/* Brand */}
-                    <div className="col-span-1 md:col-span-1 lg:col-span-2">
-                        <div className="flex items-center gap-2 mb-6">
+                    <div className="col-span-1 md:col-span-1 lg:col-span-2 text-center md:text-start flex flex-col items-center md:items-start">
+                        <div className="flex items-center justify-center md:justify-start gap-2 mb-6" dir="ltr">
                             <div className="w-8 h-8 bg-stone-100 rounded flex items-center justify-center text-stone-900 font-bold">
                                 W
                             </div>
@@ -32,7 +32,7 @@ export default function Footer() {
                     </div>
 
                     {/* Links */}
-                    <div>
+                    <div className="text-center md:text-start">
                         <h4 className="text-white font-bold mb-6 text-lg">ניווט מהיר</h4>
                         <ul className="space-y-4">
                             <li><a href="#" className="hover:text-white transition-colors">דף הבית</a></li>
@@ -43,7 +43,7 @@ export default function Footer() {
                     </div>
 
                     {/* Legal */}
-                    <div>
+                    <div className="text-center md:text-start">
                         <h4 className="text-white font-bold mb-6 text-lg">מידע נוסף</h4>
                         <ul className="space-y-4">
                             <li><a href="#contact" className="hover:text-white transition-colors">יצירת קשר</a></li>
@@ -54,29 +54,29 @@ export default function Footer() {
                     </div>
 
                     {/* Contact */}
-                    <div>
+                    <div className="text-center md:text-start">
                         <h4 className="text-white font-bold mb-6 text-lg">צור קשר</h4>
                         <ul className="space-y-4">
                             <li>
-                                <a href="tel:0501234567" className="flex items-center gap-3 hover:text-white transition-colors">
+                                <a href="tel:0501234567" className="flex items-center justify-center md:justify-start gap-3 hover:text-white transition-colors">
                                     <Phone size={18} />
                                     <span dir="ltr">050-1234567</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="mailto:info@stylehipuim.co.il" className="flex items-center gap-3 hover:text-white transition-colors">
+                                <a href="mailto:info@stylehipuim.co.il" className="flex items-center justify-center md:justify-start gap-3 hover:text-white transition-colors">
                                     <Mail size={18} />
                                     <span>info@stylehipuim.co.il</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="flex items-center gap-3 hover:text-white transition-colors">
+                                <a href="#" className="flex items-center justify-center md:justify-start gap-3 hover:text-white transition-colors">
                                     <Instagram size={18} />
                                     <span>אינסטגרם</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="flex items-center gap-3 hover:text-white transition-colors">
+                                <a href="#" className="flex items-center justify-center md:justify-start gap-3 hover:text-white transition-colors">
                                     <Facebook size={18} />
                                     <span>פייסבוק</span>
                                 </a>

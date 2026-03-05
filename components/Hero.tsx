@@ -47,7 +47,7 @@ export default function Hero() {
                         className="bg-white text-stone-900 hover:bg-stone-100 px-8 py-4 rounded-sm font-medium text-lg transition-colors flex items-center gap-2 w-full sm:w-auto justify-center shadow-lg"
                     >
                         לצפייה בקטלוג
-                        <ArrowLeft size={20} className="mr-2" />
+                        <ArrowLeft size={20} />
                     </a>
                     <a
                         href="#contact"

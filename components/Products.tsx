@@ -25,7 +25,7 @@ export default function Products() {
     return (
         <section id="products" className="py-20 md:py-28 bg-stone-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6 text-center md:text-right">
+                <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6 text-center md:text-start">
                     <div className="max-w-2xl mx-auto md:mx-0">
                         <motion.h2
                             initial={{ opacity: 0, y: 20 }}
@@ -47,7 +47,7 @@ export default function Products() {
                         </motion.p>
                     </div>
                     <motion.a
-                        initial={{ opacity: 0, x: -20 }}
+                        initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         href="#contact"

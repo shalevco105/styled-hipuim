@@ -53,10 +53,10 @@ export default function Testimonials() {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="bg-stone-800/50 p-10 rounded-sm border border-stone-700/50 relative hover:border-stone-500 transition-colors"
                         >
-                            <Quote size={40} className="text-stone-600 absolute top-6 right-6 opacity-30" />
+                            <Quote size={40} className="text-stone-600 absolute top-4 end-4 md:top-6 md:end-6 opacity-20 md:opacity-30" />
                             <div className="relative z-10">
                                 <p className="text-stone-300 text-lg leading-relaxed mb-8 italic">
-                                    &quot;{testimonial.text}&quot;
+                                    {testimonial.text}
                                 </p>
                                 <div className="w-12 h-[1px] bg-stone-600 mb-4" />
                                 <h4 className="font-bold text-lg text-white">{testimonial.name}</h4>

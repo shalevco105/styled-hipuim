@@ -25,7 +25,7 @@ export default function WhatsAppButton() {
             </span>
 
             {/* Tooltip */}
-            <span className="absolute left-full ml-4 top-1/2 -translate-y-1/2 bg-white text-stone-900 px-4 py-2 rounded-lg shadow-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-stone-100">
+            <span className="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white text-stone-900 px-4 py-2 rounded-lg shadow-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-stone-100">
                 מתלבטים? דברו איתנו
             </span>
         </a>

@@ -10,7 +10,7 @@ export default function Contact() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
                     {/* Contact Info */}
                     <motion.div
-                        initial={{ opacity: 0, x: 30 }}
+                        initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
@@ -24,36 +24,44 @@ export default function Contact() {
                         </p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 xl:gap-6">
-                            <a href="tel:0501234567" className="group flex flex-col p-6 bg-white rounded-2xl shadow-sm border border-stone-100 hover:shadow-md hover:border-stone-200 transition-all">
-                                <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center text-stone-900 mb-4 group-hover:scale-110 group-hover:bg-stone-100 transition-all">
+                            <a href="tel:0501234567" className="group flex items-center p-4 sm:p-6 bg-white rounded-2xl shadow-sm border border-stone-100 hover:shadow-md hover:border-stone-200 transition-all gap-4">
+                                <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center text-stone-900 shrink-0 group-hover:scale-110 group-hover:bg-stone-100 transition-all">
                                     <Phone size={24} />
                                 </div>
-                                <h4 className="text-lg font-bold text-stone-900 mb-1">טלפון</h4>
-                                <p className="text-stone-600" dir="ltr">050-1234567</p>
+                                <div>
+                                    <h4 className="text-base sm:text-lg font-bold text-stone-900 mb-0.5">טלפון</h4>
+                                    <p className="text-sm sm:text-base text-stone-600" dir="ltr">050-1234567</p>
+                                </div>
                             </a>
 
-                            <a href="mailto:info@stylehipuim.co.il" className="group flex flex-col p-6 bg-white rounded-2xl shadow-sm border border-stone-100 hover:shadow-md hover:border-stone-200 transition-all">
-                                <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center text-stone-900 mb-4 group-hover:scale-110 group-hover:bg-stone-100 transition-all">
+                            <a href="mailto:info@stylehipuim.co.il" className="group flex items-center p-4 sm:p-6 bg-white rounded-2xl shadow-sm border border-stone-100 hover:shadow-md hover:border-stone-200 transition-all gap-4">
+                                <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center text-stone-900 shrink-0 group-hover:scale-110 group-hover:bg-stone-100 transition-all">
                                     <Mail size={24} />
                                 </div>
-                                <h4 className="text-lg font-bold text-stone-900 mb-1">אימייל</h4>
-                                <p className="text-stone-600">info@stylehipuim.co.il</p>
+                                <div>
+                                    <h4 className="text-base sm:text-lg font-bold text-stone-900 mb-0.5">אימייל</h4>
+                                    <p className="text-sm sm:text-base text-stone-600">info@stylehipuim.co.il</p>
+                                </div>
                             </a>
 
-                            <a href="#" className="group flex flex-col p-6 bg-white rounded-2xl shadow-sm border border-stone-100 hover:shadow-md hover:border-stone-200 transition-all">
-                                <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center text-stone-900 mb-4 group-hover:scale-110 group-hover:bg-stone-100 transition-all">
+                            <a href="#" className="group flex items-center p-4 sm:p-6 bg-white rounded-2xl shadow-sm border border-stone-100 hover:shadow-md hover:border-stone-200 transition-all gap-4">
+                                <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center text-stone-900 shrink-0 group-hover:scale-110 group-hover:bg-stone-100 transition-all">
                                     <Instagram size={24} />
                                 </div>
-                                <h4 className="text-lg font-bold text-stone-900 mb-1">אינסטגרם</h4>
-                                <p className="text-stone-600">עקבו אחרינו</p>
+                                <div>
+                                    <h4 className="text-base sm:text-lg font-bold text-stone-900 mb-0.5">אינסטגרם</h4>
+                                    <p className="text-sm sm:text-base text-stone-600">עקבו אחרינו</p>
+                                </div>
                             </a>
 
-                            <a href="#" className="group flex flex-col p-6 bg-white rounded-2xl shadow-sm border border-stone-100 hover:shadow-md hover:border-stone-200 transition-all">
-                                <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center text-stone-900 mb-4 group-hover:scale-110 group-hover:bg-stone-100 transition-all">
+                            <a href="#" className="group flex items-center p-4 sm:p-6 bg-white rounded-2xl shadow-sm border border-stone-100 hover:shadow-md hover:border-stone-200 transition-all gap-4">
+                                <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center text-stone-900 shrink-0 group-hover:scale-110 group-hover:bg-stone-100 transition-all">
                                     <Facebook size={24} />
                                 </div>
-                                <h4 className="text-lg font-bold text-stone-900 mb-1">פייסבוק</h4>
-                                <p className="text-stone-600">הצטרפו לקהילה שלנו</p>
+                                <div>
+                                    <h4 className="text-base sm:text-lg font-bold text-stone-900 mb-0.5">פייסבוק</h4>
+                                    <p className="text-sm sm:text-base text-stone-600">הצטרפו לקהילה שלנו</p>
+                                </div>
                             </a>
                         </div>
 
@@ -70,7 +78,7 @@ export default function Contact() {
 
                     {/* Form */}
                     <motion.div
-                        initial={{ opacity: 0, x: -30 }}
+                        initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
@@ -91,7 +99,8 @@ export default function Contact() {
                                 <input
                                     type="tel"
                                     id="phone"
-                                    className="w-full bg-stone-50 border border-stone-200 rounded-sm px-4 py-3 focus:outline-none focus:ring-2 focus:ring-stone-500 focus:border-transparent transition-all"
+                                    dir="ltr"
+                                    className="w-full bg-stone-50 border border-stone-200 rounded-sm px-4 py-3 focus:outline-none focus:ring-2 focus:ring-stone-500 focus:border-transparent transition-all text-right"
                                     placeholder="05X-XXXXXXX"
                                 />
                             </div>
@@ -100,7 +109,8 @@ export default function Contact() {
                                 <input
                                     type="email"
                                     id="email"
-                                    className="w-full bg-stone-50 border border-stone-200 rounded-sm px-4 py-3 focus:outline-none focus:ring-2 focus:ring-stone-500 focus:border-transparent transition-all"
+                                    dir="ltr"
+                                    className="w-full bg-stone-50 border border-stone-200 rounded-sm px-4 py-3 focus:outline-none focus:ring-2 focus:ring-stone-500 focus:border-transparent transition-all text-right"
                                     placeholder="name@example.com"
                                 />
                             </div>

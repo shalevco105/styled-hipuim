@@ -29,9 +29,9 @@ export default function Navbar() {
             className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white/95 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"
                 }`}
         >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center relative">
                 {/* LOGO Placeholder */}
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 z-10" dir="ltr">
                     <div className="w-10 h-10 bg-stone-800 rounded flex items-center justify-center text-white font-bold text-xl">
                         W
                     </div>
@@ -41,7 +41,7 @@ export default function Navbar() {
                 </div>
 
                 {/* Desktop Nav */}
-                <nav className="hidden md:flex items-center gap-8">
+                <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6 lg:gap-8">
                     {links.map((link) => (
                         <a
                             key={link.name}
@@ -52,6 +52,9 @@ export default function Navbar() {
                             {link.name}
                         </a>
                     ))}
+                </nav>
+
+                <div className="hidden md:flex items-center z-10">
                     <a
                         href="#contact"
                         className="bg-stone-800 hover:bg-stone-700 text-white px-6 py-2.5 rounded-sm text-sm font-medium transition-colors flex items-center gap-2"
@@ -59,11 +62,11 @@ export default function Navbar() {
                         <Phone size={16} />
                         לקבלת הצעת מחיר
                     </a>
-                </nav>
+                </div>
 
                 {/* Mobile Menu Toggle */}
                 <button
-                    className="md:hidden text-stone-900 bg-white/80 p-2 rounded"
+                    className="md:hidden text-stone-900 bg-white/80 p-2 rounded z-10"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
                     {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -84,7 +87,7 @@ export default function Navbar() {
                                 key={link.name}
                                 href={link.href}
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-stone-800 font-medium py-2 border-b border-stone-50"
+                                className="text-stone-800 font-medium py-3 border-b border-stone-50 text-center"
                             >
                                 {link.name}
                             </a>
