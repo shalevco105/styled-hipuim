@@ -8,7 +8,7 @@ const assistant = Assistant({
 });
 
 export const metadata: Metadata = {
-  title: "חיפויי קירות יוקרתיים | Styled Hipuim",
+  title: "חיפויי קירות יוקרתיים | Style Hipuim",
   description: "פתרונות חיפוי פנים מעוצבים, המשלבים חדשנות, איכות ללא פשרות ומראה עוצר נשימה.",
 };
 

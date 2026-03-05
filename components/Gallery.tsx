@@ -57,6 +57,13 @@ export default function Gallery() {
                                     צפייה בפרויקט
                                 </span>
                             </div>
+
+                            {/* Copyright Badge */}
+                            <div className="absolute bottom-2 right-2 md:bottom-3 md:right-3 z-10 pointer-events-none">
+                                <div className="bg-black/40 backdrop-blur-sm border border-white/10 text-white/90 text-[10px] md:text-xs px-2 py-1 rounded-sm shadow-sm group-hover:bg-black/60 transition-colors duration-300">
+                                    בשיתוף עם אברבוך
+                                </div>
+                            </div>
                         </motion.div>
                     ))}
                 </div>

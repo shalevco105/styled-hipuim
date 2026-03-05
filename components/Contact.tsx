@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Instagram, Facebook } from "lucide-react";
 
 export default function Contact() {
     return (
@@ -20,38 +20,50 @@ export default function Contact() {
                         </h2>
                         <div className="w-20 h-1 bg-stone-800 rounded-full mb-8" />
                         <p className="text-stone-600 text-lg mb-12 leading-relaxed">
-                            בין אם אתם בשלב הראשוני של החיפושים או כבר יודעים בדיוק מה אתם רוצים, אנחנו כאן כדי לייעץ, לכוון, ולהציע פתרונות חיפוי ברמה הגבוהה ביותר. השאירו פרטים ונחזור אליכם בהקדם.
+                            בין אם אתם בשלב הראשוני של החיפושים או כבר יודעים בדיוק מה אתם רוצים, אנחנו כאן כדי לכוון ולהציע פתרונות חיפוי ברמה הגבוהה ביותר. השאירו פרטים ונחזור אליכם בהקדם.
                         </p>
 
-                        <div className="space-y-8">
-                            <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 bg-white rounded-sm flex items-center justify-center shadow-sm text-stone-700 mt-1 shrink-0">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 xl:gap-6">
+                            <a href="tel:0501234567" className="group flex flex-col p-6 bg-white rounded-2xl shadow-sm border border-stone-100 hover:shadow-md hover:border-stone-200 transition-all">
+                                <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center text-stone-900 mb-4 group-hover:scale-110 group-hover:bg-stone-100 transition-all">
                                     <Phone size={24} />
                                 </div>
-                                <div>
-                                    <h4 className="text-lg font-bold text-stone-900 mb-1">טלפון</h4>
-                                    <p className="text-stone-600">050-1234567<br />077-7654321</p>
-                                </div>
-                            </div>
+                                <h4 className="text-lg font-bold text-stone-900 mb-1">טלפון</h4>
+                                <p className="text-stone-600" dir="ltr">050-1234567</p>
+                            </a>
 
-                            <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 bg-white rounded-sm flex items-center justify-center shadow-sm text-stone-700 mt-1 shrink-0">
+                            <a href="mailto:info@stylehipuim.co.il" className="group flex flex-col p-6 bg-white rounded-2xl shadow-sm border border-stone-100 hover:shadow-md hover:border-stone-200 transition-all">
+                                <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center text-stone-900 mb-4 group-hover:scale-110 group-hover:bg-stone-100 transition-all">
                                     <Mail size={24} />
                                 </div>
-                                <div>
-                                    <h4 className="text-lg font-bold text-stone-900 mb-1">אימייל</h4>
-                                    <p className="text-stone-600">info@styledhipuim.co.il</p>
-                                </div>
-                            </div>
+                                <h4 className="text-lg font-bold text-stone-900 mb-1">אימייל</h4>
+                                <p className="text-stone-600">info@stylehipuim.co.il</p>
+                            </a>
 
-                            <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 bg-white rounded-sm flex items-center justify-center shadow-sm text-stone-700 mt-1 shrink-0">
-                                    <MapPin size={24} />
+                            <a href="#" className="group flex flex-col p-6 bg-white rounded-2xl shadow-sm border border-stone-100 hover:shadow-md hover:border-stone-200 transition-all">
+                                <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center text-stone-900 mb-4 group-hover:scale-110 group-hover:bg-stone-100 transition-all">
+                                    <Instagram size={24} />
                                 </div>
-                                <div>
-                                    <h4 className="text-lg font-bold text-stone-900 mb-1">אזור שירות</h4>
-                                    <p className="text-stone-600">בכל הארץ - שירות עד בית הלקוח ותצוגה בתיאום מראש.</p>
+                                <h4 className="text-lg font-bold text-stone-900 mb-1">אינסטגרם</h4>
+                                <p className="text-stone-600">עקבו אחרינו</p>
+                            </a>
+
+                            <a href="#" className="group flex flex-col p-6 bg-white rounded-2xl shadow-sm border border-stone-100 hover:shadow-md hover:border-stone-200 transition-all">
+                                <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center text-stone-900 mb-4 group-hover:scale-110 group-hover:bg-stone-100 transition-all">
+                                    <Facebook size={24} />
                                 </div>
+                                <h4 className="text-lg font-bold text-stone-900 mb-1">פייסבוק</h4>
+                                <p className="text-stone-600">הצטרפו לקהילה שלנו</p>
+                            </a>
+                        </div>
+
+                        <div className="mt-4 xl:mt-6 p-6 bg-white rounded-2xl shadow-sm border border-stone-100 flex items-start gap-4">
+                            <div className="w-12 h-12 bg-stone-50 rounded-full flex items-center justify-center text-stone-900 shrink-0">
+                                <MapPin size={24} />
+                            </div>
+                            <div>
+                                <h4 className="text-lg font-bold text-stone-900 mb-1">אזור שירות</h4>
+                                <p className="text-stone-600">בכל הארץ - שירות עד בית הלקוח ותצוגה בתיאום מראש.</p>
                             </div>
                         </div>
                     </motion.div>
@@ -110,6 +122,8 @@ export default function Contact() {
                         </form>
                     </motion.div>
                 </div>
+
+
             </div>
         </section>
     );

@@ -36,7 +36,7 @@ export default function Navbar() {
                         W
                     </div>
                     <span className={`text-2xl font-bold tracking-tight ${isScrolled ? "text-stone-900" : "text-stone-900 lg:text-white"}`}>
-                        Styled Hipuim
+                        Style Hipuim
                     </span>
                 </div>
 

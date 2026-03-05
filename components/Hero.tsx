@@ -53,7 +53,7 @@ export default function Hero() {
                         href="#contact"
                         className="bg-stone-900/50 backdrop-blur-sm border border-white/30 text-white hover:bg-white/20 px-8 py-4 rounded-sm font-medium text-lg transition-colors w-full sm:w-auto justify-center flex shadow-lg"
                     >
-                        ייעוץ חינם
+                        לקבלת הצעת מחיר
                     </a>
                 </motion.div>
             </div>
